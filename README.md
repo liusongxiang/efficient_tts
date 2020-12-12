@@ -1,4 +1,4 @@
-# Pytorch implementation of "efficientTTS: An Efficient and High-Quality Text-to-Speech Architecture".
+## Pytorch implementation of "efficientTTS: An Efficient and High-Quality Text-to-Speech Architecture".
 
 ## Setup with virtualenv
 
