@@ -16,4 +16,7 @@ Note: If you want to specify Python version, CUDA version or PyTorch version, pl
 $ make PYTHON=3.7 CUDA_VERSION=10.1 PYTORCH_VERSION=1.6
 ```
 
+## Acknowledgement
+The code framework is from https://github.com/kan-bayashi/ParallelWaveGAN
+
 
