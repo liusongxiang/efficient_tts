@@ -1,0 +1,52 @@
+# Use phoneme sequence as input
+###########################################################
+#                      Dataset                            #
+###########################################################
+dataset_type: "TextMelLoader" 
+dataset_params:
+  wav_path: "abs/path/to/LJSpeech-1.1/wavs"
+  use_phnseq: True
+  phnset_path: "abs/path/to/nv_taco2_filelists/g2p_en_phnset.txt"
+
+collate_fn_type: "TextMelCollate"
+
+###########################################################
+#             NETWORK ARCHITECTURE SETTING                #
+###########################################################
+model_name: "EfficientTTSCNN"
+model_params:
+  num_symbols: 76
+  dropout_rate: 0.0
+  use_masking: True #False
+  use_weighted_masking: False
+  sigma: 0.01  # \sigma in eq (17)
+
+###########################################################
+#                  DATA LOADER SETTING                    #
+###########################################################
+batch_size: 128            # Batch size.
+pin_memory: false          # Whether to pin memory in Pytorch DataLoader.
+num_workers: 2             # Number of workers in Pytorch DataLoader.
+
+###########################################################
+#             OPTIMIZER & SCHEDULER SETTING               #
+###########################################################
+optimizer_type: "Adam" 
+optimizer_params:
+  lr: 1.0e-3                          # learning rate.
+  betas: [0.9, 0.99]                  # adam betas
+  eps: 1.0e-9                         # epsilon.
+  weight_decay: 1.e-5                   #  weight decay coefficient.
+  amsgrad: true
+grad_norm: 1.0                 # gradient norm.
+scheduler_type: "WarmupLR"  # scheduler type.
+scheduler_params:
+  warmup_steps: 4000
+
+###########################################################
+#                    INTERVAL SETTING                     #
+###########################################################
+train_max_steps: 1000000                # Number of training steps.
+save_interval_steps: 5000               # Interval steps to save checkpoint.
+eval_interval_steps: 1000               # Interval steps to evaluate the network.
+log_interval_steps: 1000                 # Interval steps to record the training log.
