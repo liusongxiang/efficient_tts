@@ -50,8 +50,8 @@ if [ "${stage}" -le 1 ] && [ "${stop_stage}" -ge 1 ]; then
     echo "Training start. See the progress via ${expdir}/train.log."
     ${train} \
         --config "${conf}" \
-        --train_fid_scp "nv_taco2_filelists/ljs_audio_phnseq_train_filelist.txt" \
-        --dev_fid_scp "nv_taco2_filelists/ljs_audio_phnseq_val_filelist.txt" \
+        --train_fid_scp "data/nv_taco2_filelists/ljs_audio_phnseq_train_filelist.txt" \
+        --dev_fid_scp "data/nv_taco2_filelists/ljs_audio_phnseq_val_filelist.txt" \
         --outdir "${expdir}" \
         --resume "${resume}" \
         --verbose "${verbose}"
