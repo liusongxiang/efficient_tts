@@ -1,1 +1,1 @@
-from .effcient_tts_trainer import EfficientTTSTrainer
+from .efficient_tts_trainer import EfficientTTSTrainer
