@@ -5,7 +5,7 @@
 .\#*
 *DS_Store
 out.txt
-nnsvc.egg-info/
+nntts.egg-info/
 doc/_build
 slurm-*.out
 tmp*
