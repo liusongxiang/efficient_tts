@@ -5,7 +5,7 @@
 2020/12/20: Using the HifiGAN finetuned with Tacotron2 GTA mel spectrograms can increase the quality of the generated samples, please see the newly [generated-samples](https://github.com/liusongxiang/efficient_tts/tree/main/egs/lj/checkpoint-320000steps)
 
 ## Current status
-- [x] Implementation of EFTS-CNN + HifiGAN ([Generated-samples](https://github.com/liusongxiang/efficient_tts/tree/main/egs/lj/current-gen-waves-130000steps))
+- [x] Implementation of EFTS-CNN + HifiGAN
 
 ## Setup with virtualenv
 
