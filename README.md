@@ -5,6 +5,9 @@
 
 
 ## Updates
+
+2020/12/23: [Mandarin Chinese Samples](https://github.com/liusongxiang/efficient_tts/tree/main/egs/DataBaker/checkpoint-330000steps_LJ_vocoder) uploaded. The experiment setting is exactly the same with the LJSpeech example. A complete description of the usage will be soon uploaded.
+
 2020/12/20: Using the HifiGAN finetuned with Tacotron2 GTA mel spectrograms can increase the quality of the generated samples, please see the newly [generated-samples](https://github.com/liusongxiang/efficient_tts/tree/main/egs/lj/checkpoint-320000steps)
 
 ## Current status
