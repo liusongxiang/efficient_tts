@@ -1,7 +1,5 @@
 # EfficientTTS
 ## Unofficial Pytorch implementation of "EfficientTTS: An Efficient and High-Quality Text-to-Speech Architecture"([arXiv](https://arxiv.org/abs/2012.03500)).
-### Disclaimer: Somebody mistakenly think I'm one of the authors. In fact, I am not even in the author list of this paper. I am just a TTS enthusiast. Some important information of the implementation is not presented by the paper. Some model parameters in current version is based on my understanding and exepriments, which may not be consistent with those used by the authors.
-
 
 
 ## Updates
